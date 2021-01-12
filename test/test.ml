@@ -87,10 +87,6 @@ let test_sat_raise ?(during = Touist.Err.Eval) ?(typ = Touist.Err.Error)
     ?(nth = 0) loc text _ =
   test_raise sat during typ nth loc text
 
-let test_sat_raise ?(during = Touist.Err.Eval) ?(typ = Touist.Err.Error)
-    ?(nth = 0) loc text _ =
-  test_raise sat during typ nth loc text
-
 let test_smt_raise ?(during = Touist.Err.Eval) ?(typ = Touist.Err.Error)
     ?(nth = 0) ?(logic = "QF_IDL") loc text _ =
   test_raise (smt logic) during typ nth loc text
